@@ -1,0 +1,26 @@
+ext {
+    // App dependency versions
+    supportLibraryVer = '28.0.0'
+    exifinterfaceVer = '28.0.0'
+    grpcVer = '1.1.2'
+    protocVer = '3.2.0'
+    playServiceVer = '10.2.0'
+    guavaVer = '20.0'
+    gsonVer = '2.8.0'
+    eventbusVer = '3.0.0'
+    googleAuthVer = '0.6.0'
+    multidexVer = '1.0.3'
+    javaxAnnotationVer = '1.2'
+
+    // Test dependency version
+    junitVer = '4.12'
+    mockitoVer = '1.10.19'
+    robolectricVer = '3.2.2'
+    espressoVer = '2.2.2'
+
+    // Android config
+    compileSdkVer = 28
+    buildToolsVer = '28.0.0'
+    minSdkVer = 19
+    targetSdkVer = 28
+}

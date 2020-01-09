@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_body_container_list_card_tabbed_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_check_list_card_tabbed_body_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_bottom_adapter_item_body_list_card_tabbed"
+            android:paddingTop="@dimen/padding_top_adapter_item_body_list_card_tabbed"
+            android:src="@drawable/ic_check_unselected" />
+
+        <TextView
+            android:id="@+id/tv_text_list_card_tabbed_body_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_bottom_adapter_item_body_list_card_tabbed"
+            android:paddingRight="@dimen/padding_right_textview_adapter_item_body_list_card_tabbed"
+            android:paddingEnd="@dimen/padding_right_textview_adapter_item_body_list_card_tabbed"
+            android:paddingTop="@dimen/padding_top_adapter_item_body_list_card_tabbed"
+            style="@style/Text.Secondary.Black" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_view"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+
+ext.versionMajor = 0; ext.versionMinor = 0; ext.versionPatch = 1
+ext.jenkinsBuildNumber = Integer.valueOf(System.env.BUILD_NUMBER ?: 0)
+
+android {
+    compileSdkVersion compileSdkVer
+    buildToolsVersion buildToolsVer
+
+
+    defaultConfig {
+        minSdkVersion minSdkVer
+        targetSdkVersion targetSdkVer
+        versionCode computeVersionCode()
+        versionName computeVersionName()
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+// Returns name based on version value, '1.0.0'
+def computeVersionName() {
+    return "${versionMajor}.${versionMinor}.${versionPatch}"
+}
+
+// Returns auto-incrementing value, e.g. 100012, for Jenkins #12
+def computeVersionCode() {
+    return (versionMajor * 100_000) + (versionMinor * 10_000) +
+            (versionPatch * 1_000) + jenkinsBuildNumber
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation (name: 'MFSDKMessaging', ext: 'aar')
+
+//    implementation 'com.morfeus.android:MFSDKMessaging:1.0.1'
+
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVer", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation("io.grpc:grpc-protobuf:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    implementation("io.grpc:grpc-stub:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    implementation("io.grpc:grpc-auth:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    implementation("io.grpc:grpc-okhttp:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+
+    // OAuth2 for Google API
+    implementation("com.google.auth:google-auth-library-oauth2-http:$googleAuthVer") {
+        exclude module: 'jsr305'
+        exclude module: 'httpclient'
+    }
+
+    implementation "com.android.support:multidex:$multidexVer"
+    implementation "com.android.support:appcompat-v7:$supportLibraryVer"
+    implementation "com.android.support:cardview-v7:$supportLibraryVer"
+    implementation "com.android.support:recyclerview-v7:$supportLibraryVer"
+    implementation "com.android.support:design:$supportLibraryVer"
+    implementation "com.android.support:exifinterface:$exifinterfaceVer"
+    implementation "com.google.guava:guava:$guavaVer"
+    implementation "org.greenrobot:eventbus:$eventbusVer"
+    implementation "com.google.code.gson:gson:$gsonVer"
+    implementation "com.google.firebase:firebase-messaging:$playServiceVer"
+    implementation "javax.annotation:javax.annotation-api:$javaxAnnotationVer"
+    implementation "com.google.android.gms:play-services:$playServiceVer"
+    implementation "com.android.support:cardview-v7:$supportLibraryVer"
+
+    testImplementation "junit:junit:$junitVer"
+    testImplementation "org.mockito:mockito-all:$mockitoVer"
+    testImplementation "org.robolectric:robolectric:$robolectricVer"
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_text_primary">#212121</color>
+    <color name="color_text_secondary">#4B4B4B</color>
+
+    <color name="color_light">#F8F5F5</color>
+
+    <color name="color_bubble_time_text">#A3A3A3</color>
+    <color name="color_bubble_msg_text">@android:color/black</color>
+
+    <!-- Rounded button -->
+    <color name="color_bg_rounded_button_pressed">#9b4540</color>
+    <color name="color_bg_rounded_button_disabled">#bebebe</color>
+    <color name="color_bg_rounded_button_disabled_new">#59023F61</color>
+    <color name="color_bg_rounded_button">#023F61</color>
+
+</resources>

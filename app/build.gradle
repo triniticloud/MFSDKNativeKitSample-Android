@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'com.google.protobuf'
+
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.activeai.MFSDKNativeKitSample"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -17,13 +19,95 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:${protocVer}"
+    }
+    plugins {
+        grpc {
+            artifact = "io.grpc:protoc-gen-grpc-java:${grpcVer}"
+        }
+    }
+    generateProtoTasks {
+        all().each {
+            task ->
+                task.builtins {
+                    remove javanano
+                    java {
+                    }
+                }
+                task.plugins {
+                    grpc {
+                    }
+                }
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Android support
+    implementation "com.android.support:cardview-v7:$supportLibraryVer"
+    implementation "com.android.support:recyclerview-v7:$supportLibraryVer"
+    implementation "com.android.support:design:$supportLibraryVer"
+    implementation "com.android.support:appcompat-v7:$supportLibraryVer"
+    implementation "com.android.support:multidex:$multidexVer"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation "com.android.support:support-v4:$supportLibraryVer"
+
+    // MFSDKMessaging
+    implementation(name: 'MFSDKMessaging', ext: 'aar')
+//    implementation 'com.morfeus.android:MFSDKMessaging:1.0.1'
+
+
+    implementation "com.google.android.gms:play-services:$playServiceVer"
+    implementation "com.google.guava:guava:$guavaVer"
+    implementation "com.google.code.gson:gson:$gsonVer"
+    implementation "org.greenrobot:eventbus:$eventbusVer"
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+        transitive = true
+    }
+
+    // Google speech grpc
+    implementation("io.grpc:grpc-protobuf:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    implementation("io.grpc:grpc-stub:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    implementation("io.grpc:grpc-auth:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    implementation("io.grpc:grpc-okhttp:$grpcVer") {
+        exclude module: 'jsr305'
+    }
+    // OAuth2 for Google API
+    implementation("com.google.auth:google-auth-library-oauth2-http:$googleAuthVer") {
+        exclude module: 'jsr305'
+        exclude module: 'httpclient'
+    }
+
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVer", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation project(':uikit')
+    implementation "com.google.firebase:firebase-core:$playServiceVer"
 }

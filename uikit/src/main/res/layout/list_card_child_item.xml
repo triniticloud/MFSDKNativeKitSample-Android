@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_bottom_adapter_item_header_image_card"
+        android:paddingEnd="@dimen/padding_right_adapter_item_header_image_card"
+        android:paddingLeft="@dimen/padding_left_adapter_item_header_image_card"
+        android:paddingRight="@dimen/padding_right_adapter_item_header_image_card"
+        android:paddingStart="@dimen/padding_left_adapter_item_header_image_card">
+
+        <com.morfeus.android.uikit.view.SansFranciscoTextView
+            android:id="@+id/tv_title_list_card_child_item"
+            style="@style/Text.Primary"
+            android:textSize="14sp"
+            android:paddingTop="@dimen/padding_top_adapter_item_header_image_Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.morfeus.android.uikit.view.SansFranciscoTextView
+            android:id="@+id/tv_sub_title_list_card_child_item"
+            style="@style/Text.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="@dimen/margin_top_adapter_item_image_heaer_card" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:id="@+id/ll_btn_container_list_card_child_item"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_bottom_adapter_btn_container_item_account_card"
+            android:layout_height="wrap_content">
+
+            <com.morfeus.android.uikit.view.SansFranciscoButton
+                android:id="@+id/btn_first_list_card_child_item"
+                style="@style/Widget.App.Button.Rounded.Selector"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:visibility="visible"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <com.morfeus.android.uikit.view.SansFranciscoButton
+                android:id="@+id/btn_second_list_card_child_item"
+                style="@style/Widget.App.Button.Rounded.Selector"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:visibility="visible"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <com.morfeus.android.uikit.view.SansFranciscoButton
+                android:id="@+id/btn_third_list_card_child_item"
+                style="@style/Widget.App.Button.Rounded.Selector"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

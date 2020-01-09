@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_bottom_adapter_btn_container_item_account_card">8dp</dimen>
+    <dimen name="width_image_header_card">351dp</dimen>
+
+    <!-- misc -->
+    <dimen name="primary_text_size">18sp</dimen>
+    <dimen name="secondary_text_size">16sp</dimen>
+
+    <!--mfclip-->
+    <dimen name="top_corner">8dp</dimen>
+    <dimen name="margin_top_button_container">8dp</dimen>
+    <dimen name="bottom_corner">8dp</dimen>
+    <dimen name="all_corner">8dp</dimen>
+
+    <dimen name="left_padding_text_rounded_button">12dp</dimen>
+    <dimen name="right_padding_text_rounded_button">12dp</dimen>
+
+    <dimen name="margin_top_adapter_item_image_heaer_card">8dp</dimen>
+
+    <dimen name="padding_top_adapter_item_header_image_Card">16dp</dimen>
+    <dimen name="padding_left_adapter_item_header_image_card">10dp</dimen>
+    <dimen name="padding_right_adapter_item_header_image_card">10dp</dimen>
+    <dimen name="padding_bottom_adapter_item_header_image_card">4dp</dimen>
+
+    <!--List Card Tabbed-->
+    <dimen name="margin_left_list_card_tabbed">8dp</dimen>
+    <dimen name="margin_right_list_card_tabbed">8dp</dimen>
+    <dimen name="corner_radius_list_card_tabbed">6dp</dimen>
+    <dimen name="padding_bottom_adapter_item_body_list_card_tabbed">8dp</dimen>
+    <dimen name="padding_left_adapter_item_body_list_card_tabbed">8dp</dimen>
+    <dimen name="max_width_button_list_card_tabbed">156dp</dimen>
+
+    <!--<dimen name="padding_right_adapter_item_body_list_card_tabbed" >8dp</dimen>-->
+    <dimen name="padding_top_adapter_item_body_list_card_tabbed">8dp</dimen>
+    <dimen name="padding_right_textview_adapter_item_body_list_card_tabbed">16dp</dimen>
+    <dimen name="padding_bottom_ll_adpter_item_header_list_card_tabbed">14dp</dimen>
+    <dimen name="padding_left_ll_adpter_item_header_list_card_tabbed">8dp</dimen>
+    <dimen name="padding_right_ll_adpter_item_header_list_card_tabbed">8dp</dimen>
+    <dimen name="padding_top_ll_adpter_item_header_list_card_tabbed">14dp</dimen>
+    <dimen name="padding_bottom_textview_adpter_item_header_list_card_tabbed">8dp</dimen>
+    <dimen name="padding_left_textview_adpter_item_header_list_card_tabbed">16dp</dimen>
+    <dimen name="padding_right_textview_adpter_item_header_list_card_tabbed">16dp</dimen>
+    <dimen name="padding_top_textview_adpter_item_header_list_card_tabbed">8dp</dimen>
+
+    <!--Text card-->
+    <dimen name="margin_right_text_in_card">4dp</dimen>
+    <dimen name="margin_left_text_in_card">4dp</dimen>
+    <dimen name="margin_left_padding_card_item">4dp</dimen>
+    <dimen name="margin_right_padding_card_item">4dp</dimen>
+    <dimen name="margin_bottom_rv_rowImage">8dp</dimen>
+    <dimen name="margin_bottom_resend_otp_button">16dp</dimen>
+    <dimen name="margin_botttom_button_container">16dp</dimen>
+    <dimen name="margin_right_text_bubble">20dp</dimen>
+    <!-- Text bubble dimensions -->
+    <dimen name="msg_text_size_bubble">12sp</dimen>
+
+    <dimen name="keyline_bubble">8dp</dimen>
+
+    <dimen name="left_padding_in_bubble_text">28dp</dimen>
+    <dimen name="right_padding_in_bubble_text">12dp</dimen>
+    <dimen name="top_padding_in_bubble_text">10dp</dimen>
+    <dimen name="bottom_padding_in_bubble_text">12dp</dimen>
+
+    <dimen name="right_padding_out_bubble_text">20dp</dimen>
+    <dimen name="left_padding_out_bubble_text">16dp</dimen>
+    <dimen name="top_padding_out_bubble_text">10dp</dimen>
+    <dimen name="bottom_padding_out_bubble_text">12dp</dimen>
+    <dimen name="msg_bottom_margin_bottom_out_bubble">4dp</dimen>
+
+    <dimen name="height_bubble_small_tick">10dp</dimen>
+    <dimen name="msg_time_text_right_margin_bubble">6dp</dimen>
+    <dimen name="right_margin_in_bubble_text">60dp</dimen>
+    <dimen name="left_margin_out_bubble_text">60dp</dimen>
+</resources>

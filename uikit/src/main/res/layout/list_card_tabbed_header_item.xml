@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header_item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_bottom_ll_adpter_item_header_list_card_tabbed"
+    android:paddingEnd="@dimen/padding_right_ll_adpter_item_header_list_card_tabbed"
+    android:paddingRight="@dimen/padding_right_ll_adpter_item_header_list_card_tabbed"
+    android:paddingTop="@dimen/padding_top_ll_adpter_item_header_list_card_tabbed">
+
+    <TextView
+        android:id="@+id/tv_heading_list_card_tabbed_header_item"
+        style="@style/Text.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_shape_disabled_tabbed"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="@dimen/max_width_button_list_card_tabbed"
+        android:paddingBottom="@dimen/padding_bottom_textview_adpter_item_header_list_card_tabbed"
+        android:paddingEnd="@dimen/padding_right_textview_adpter_item_header_list_card_tabbed"
+        android:paddingLeft="@dimen/padding_left_textview_adpter_item_header_list_card_tabbed"
+        android:paddingRight="@dimen/padding_right_textview_adpter_item_header_list_card_tabbed"
+        android:paddingStart="@dimen/padding_left_textview_adpter_item_header_list_card_tabbed"
+        android:paddingTop="@dimen/padding_top_textview_adpter_item_header_list_card_tabbed" />
+
+
+</LinearLayout>

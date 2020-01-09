@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.morfeus.android.uikit.view.card.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_image_header_card"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.morfeus.android.uikit.view.card.MFClipFrameLayout
+            android:id="@+id/iv_header_image_holder_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:clipTopCorner="@dimen/top_corner">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="182dp">
+
+                <com.morfeus.android.mfsdk.ui.widget.bubble.view.template.MfNetworkImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:id="@+id/iv_header_image_header_list_card" />
+
+            </LinearLayout>
+
+        </com.morfeus.android.uikit.view.card.MFClipFrameLayout>
+
+        <include layout="@layout/divider_view"></include>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_childview_header_list_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</com.morfeus.android.uikit.view.card.CardView>

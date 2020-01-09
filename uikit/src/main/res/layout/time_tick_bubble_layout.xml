@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/templateview_text_in_layout">
+
+    <ai.active.uikit.view.SansFranciscoTextView
+        android:id="@+id/tv_bubble_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_bubble_time_text"
+        android:textSize="@dimen/msg_text_size_bubble" />
+
+    <ImageView
+        android:id="@+id/iv_bubble_tick"
+        android:layout_width="@dimen/height_bubble_small_tick"
+        android:layout_height="@dimen/height_bubble_small_tick"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/msg_time_text_right_margin_bubble"
+        android:layout_marginLeft="@dimen/msg_time_text_right_margin_bubble"
+        android:background="@drawable/ic_tick" />
+</LinearLayout>

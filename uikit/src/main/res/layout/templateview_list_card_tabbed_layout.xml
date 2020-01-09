@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        layout="@layout/bot_icon_list_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </include>
+
+    <ai.active.uikit.view.card.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_right_list_card_tabbed"
+        android:layout_marginRight="@dimen/margin_right_list_card_tabbed"
+        android:layout_toRightOf="@+id/ll_bot_icon_layout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list_list_card_tabbed_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_left_ll_adpter_item_header_list_card_tabbed"
+                android:paddingStart="@dimen/padding_left_ll_adpter_item_header_list_card_tabbed" />
+
+            <include layout="@layout/divider_view" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list_list_card_tabbed_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ai.active.uikit.view.card.CardView>
+
+</RelativeLayout>

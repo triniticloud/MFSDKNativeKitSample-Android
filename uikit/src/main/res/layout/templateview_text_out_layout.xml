@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom|end">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fl_main_container_templateview_text_out_container"
+        android:layout_height="wrap_content">
+
+
+        <include layout="@layout/user_icon_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <!-- Main bubble content-->
+        <FrameLayout
+            android:id="@+id/fl_main_container_templateview_text_out"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/ll_user_icon_layout"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_outgoing_bubble"
+            android:layout_marginLeft="@dimen/left_margin_out_bubble_text"
+            android:layout_marginStart="@dimen/left_margin_out_bubble_text"
+            android:paddingBottom="@dimen/bottom_padding_out_bubble_text"
+            android:paddingEnd="@dimen/right_padding_out_bubble_text"
+            android:paddingLeft="@dimen/left_padding_out_bubble_text"
+            android:paddingRight="@dimen/right_padding_out_bubble_text"
+            android:paddingStart="@dimen/left_padding_out_bubble_text"
+            android:paddingTop="@dimen/top_padding_out_bubble_text">
+
+            <TextView
+                android:id="@+id/tv_msg_templateview_text_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/msg_bottom_margin_bottom_out_bubble"
+                style="@style/Text.Secondary.Black" />
+
+            <!-- msg status detail-->
+            <include
+                layout="@layout/time_tick_bubble_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:gravity="bottom" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Feedback -->
+    <include
+        layout="@layout/feedback_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fl_main_container_templateview_text_out_container"
+        android:visibility="gone" />
+
+</RelativeLayout>
