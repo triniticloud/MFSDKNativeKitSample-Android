@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Active Bank</string>
+    <string name="app_name">Morfeus</string>
+    <string name="title">Active Bank</string>
+
+    <string name="null_string">Null</string>
+
+    // Main Screen Strings
+    <string name="product">Product</string>
+    <string name="location_amp_atm"><![CDATA[Location & ATM]]></string>
+    <string name="inbox">Inbox</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+    <string name="current_rates">Current Rates</string>
+    <string name="ask_me">Ask me</string>
+
+    // PostLogin Screen Strings
+    <string name="session_id_hint">SESSION_ID</string>
+    <string name="login_post">Login</string>
+    <string name="customer_id_hint">CUSTOMER_ID</string>
 </resources>
