@@ -26,8 +26,8 @@ allprojects {
         maven {
             url "http://artifactory.active.ai/artifactory/android-sdk-release-local"
             credentials {
-                username = "morfeus-mobile"
-                password = "AP53cGURfq5D396ZoLonWuxcQFYZhJHjqMKZfx"
+                username = "YOUR_USERNAME"
+                password = "YOUR_PASSWORD"
             }
         }
 
