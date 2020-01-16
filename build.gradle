@@ -24,7 +24,7 @@ allprojects {
         jcenter()
 
         maven {
-            url "http://artifactory.active.ai/artifactory/android-sdk-release-local"
+            url "http://artifacts.active.ai/artifactory/android-sdk-release"
             credentials {
                 username = "YOUR_USERNAME"
                 password = "YOUR_PASSWORD"

@@ -46,9 +46,9 @@ repositories {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation (name: 'MFSDKMessaging', ext: 'aar')
+//    implementation (name: 'MFSDKNativeKit', ext: 'aar')
 
-//    implementation 'com.morfeus.android:MFSDKMessaging:1.0.1'
+    implementation 'com.morfeus.android:MFSDKNativeKit:1.0.0'
 
     androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVer", {
         exclude group: 'com.android.support', module: 'support-annotations'

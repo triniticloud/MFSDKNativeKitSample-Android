@@ -72,8 +72,8 @@ dependencies {
     implementation "com.android.support:support-v4:$supportLibraryVer"
 
     // MFSDKMessaging
-    implementation(name: 'MFSDKMessaging', ext: 'aar')
-//    implementation 'com.morfeus.android:MFSDKMessaging:1.0.1'
+//    implementation(name: 'MFSDKNativeKit', ext: 'aar')
+    implementation 'com.morfeus.android:MFSDKNativeKit:1.0.0'
 
 
     implementation "com.google.android.gms:play-services:$playServiceVer"
