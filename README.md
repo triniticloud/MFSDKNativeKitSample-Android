@@ -1,8 +1,8 @@
 # MFSDKNativeKitSample-Android
 
-[![N|Solid](https://active.ai/wp-content/uploads/2019/03/aai_logo-min.png)](https://github.com/triniticloud/MFSDKHybridKitSample)
+[![N|Solid](https://active.ai/wp-content/uploads/2019/03/aai_logo-min.png)](https://github.com/triniticloud/MFSDKNativeKitSample-Android)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/triniticloud/MFSDKHybridKitSample)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/triniticloud/MFSDKNativeKitSample-Android)
 
 Morfeus enables financial institutions to deliver consumer services using Intuition and Automation over multiple natural channels of engagement. The Morfeus iOS SDK provides a lightweight conversational / messaging UX interface for users to interact to the Morfeus Platform. The SDK enables rich conversation components to be embedded in existing iOS Mobile Apps.
 
@@ -14,7 +14,7 @@ Morfeus enables financial institutions to deliver consumer services using Intuit
 # Setup Environment Details
 
  - To Open Chat Bot you need to set Environment detail like BOT_URL, BOT_ID & BOT_NAME to the Constant fields on Constants.java file
- - You can find that file here <a href= "https://github.com/triniticloud/MFSDKNativeKitSample-Android/blob/master/app/src/main/java/com/activeai/MFSDKNativeKitSample/utils/Constants.java">Constants.java</a>
+ - You can find that file here [Constants](https://github.com/triniticloud/MFSDKNativeKitSample-Android/blob/master/app/src/main/java/com/activeai/MFSDKNativeKitSample/utils/Constants.java)
  
     |Property|Description|
     |-|-|
